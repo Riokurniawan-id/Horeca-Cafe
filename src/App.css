@@ -1,38 +1,371 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  outline: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background: #000;
+  color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+::selection {
+  background-color: #b37700;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* hiro */
+.Hiro-section {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px -125px 74px -51px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: 0px -125px 74px -51px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: 0px -125px 74px -51px rgba(0, 0, 0, 1) inset;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.element-hiro {
+  position: absolute;
+  margin-top: 30vh;
+  width: 50%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.element-hiro h1 {
+  font-size: 3rem;
+  color: white;
+  line-height: 3rem;
+}
+.element-hiro h1 span {
+  font-size: 4rem;
+  color: white;
+}
+.element-hiro p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+  margin-top: 0.5rem;
+}
+.element-hiro a button {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: 30px;
+  background-color: #b37700;
+  border-color: rgba(255, 0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+.element-hiro button:hover {
+  background-color: #e69900;
+  cursor: pointer;
+}
+/* hiro */
+/* abaout */
+
+.about {
+  padding-top: 100px;
+}
+.container-about {
+  margin-top: 5rem;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 2rem;
+  padding: 2em;
+  font-size: 11px;
+}
+.container-about img {
+  width: 11em;
+  height: 11em;
+}
+
+.container-text-about h2 {
+  color: #000;
+  margin-left: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.container-text-about h1 {
+  color: #000;
+  margin-left: 1em;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.container-keterangan-cafe {
+  margin-top: 2em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-visi-misi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
+.keterangan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  margin: 2em;
+  text-align: center;
+  font-size: 1rem;
+}
+.keterangan h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* abaout */
+
+/* mitra */
+.mitra {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10rem;
+  padding: 2rem;
+  box-shadow: 0px 1px 57px -18px rgba(0, 0, 0, 0.73) inset;
+  -webkit-box-shadow: 0px 1px 57px -18px rgba(0, 0, 0, 0.73) inset;
+  -moz-box-shadow: 0px 1px 57px -18px rgba(0, 0, 0, 0.73) inset;
+}
+
+.mitra h3 {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin-bottom: 1rem;
+}
+
+.container-mitra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mitra-img {
+  max-height: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+.mitra-img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  cursor: pointer;
+}
+/* mitra */
+
+/* produk */
+.produk {
+  width: 100vw;
+}
+
+.produk h1 {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.container-produk a {
+  text-decoration: none;
+}
+
+.container-produk {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.card-produk {
+  width: 27%;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #353535;
+  padding: 1rem;
+  border-radius: 30px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  box-shadow: 2px -1px 59px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 2px -1px 59px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 2px -1px 59px 0px rgba(0, 0, 0, 0);
+  transition: 30ms;
+}
+
+.card-produk:hover {
+  scale: 110%;
+  box-shadow: 2px -1px 59px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px -1px 59px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px -1px 59px 0px rgba(0, 0, 0, 0.75);
+}
+.card-produk img {
+  max-width: 95%;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+/* produk */
+/* footer */
+footer {
+  position: sticky;
+  bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+/* footer */
+
+/* footer web */
+.footer-web {
+  padding: 2rem;
+  background-color: #322100;
+  margin-bottom: 0;
+}
+.container {
+  display: flex;
+}
+.container-clock {
+  width: 50%;
+}
+
+.jam-oprasional {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.clock {
+  stroke: white;
+  margin-right: 6px;
+}
+
+.container-social {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  color: white;
+}
+.social:hover {
+  scale: 110%;
+  text-shadow: 3px 4px 16px rgba(255, 255, 255, 0.6);
+}
+
+.container2 {
+  display: flex;
+  margin-top: 4rem;
+}
+.map {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* footer web */
+/* responsive */
+
+@media screen and (min-width: 624px) {
+  html {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  .element-hiro {
+    width: 80%;
+  }
+  .container-about {
+    width: 80%;
   }
 }
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 924px) {
+  html {
+    font-size: 16px;
+  }
+  .container-about {
+    font-size: 11px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  html {
+    font-size: 10px;
+  }
+  .element-hiro {
+    width: 90%;
+  }
+  .container-about {
+    width: 80%;
+  }
+
+  .element-hiro a {
+    font-size: 4rem;
+  }
+  .element-hiro a span {
+    font-size: 5rem;
+  }
+  .container-about {
+    font-size: 8px;
+    width: 90%;
+  }
+  .mitra-img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    cursor: pointer;
+    max-height: 1.3rem;
+  }
+  .card-produk {
+    width: 60%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    margin-left: 0;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .map {
+    margin-top: 2rem;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+}
+/* responsive */
