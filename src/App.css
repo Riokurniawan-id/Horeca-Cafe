@@ -22,6 +22,7 @@ body {
   width: 100%;
   position: relative;
   height: 100vh;
+  background-image: url(/asset/img/Hiro-section.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
