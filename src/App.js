@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Hiro from "./component/header.jsx";
+import Hiro from "./component/header";
 import About from "./component/about";
 import Mitra from "./component/mitra";
 import Produk from "./component/produk";
@@ -13,7 +12,13 @@ const App = () => {
       <Hiro />
       <About />
       <Mitra />
-      <Produk />
+      <section className="produk">
+        <h1>| Beberapa Produk Kami |</h1>
+        <div className="container-produk">
+          <Produk />
+        </div>
+      </section>
+
       <Footer />
       <Copyright />
     </div>
