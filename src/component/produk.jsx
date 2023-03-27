@@ -1,5 +1,7 @@
 import kopi from "../asset/img/Product/coffee_special.jpg";
-// import chicken_sandwich from "../asset/img/Product/chicken_sandwich.jpg";
+import chicken_sandwich from "../asset/img/Product/chicken_sandwich.jpg";
+import ice_tea from "../asset/img/Product/Ice_tea.jpg";
+import Pancake from "../asset/img/Product/Pancake.jpg";
 
 const listProduk = [
   {
@@ -7,6 +9,23 @@ const listProduk = [
     describe:
       "Nikmati aroma kopi yang khas dan cita rasa yang otentik dengan kopi spesial kami.",
     Gambar: kopi,
+  },
+  {
+    Nama: "Sandwich Ayam",
+    describe:
+      "Roti gurih yang dilengkapi dengan ayam panggang dan aneka sayuran segar.",
+    Gambar: chicken_sandwich,
+  },
+  {
+    Nama: "Es Teh Manis",
+    describe:
+      "Minuman segar yang terbuat dari teh berkualitas tinggi dan gula merah alami.",
+    Gambar: ice_tea,
+  },
+  {
+    Nama: "Pancake Blueberry",
+    describe: "Pancake lezat yang diberi taburan blueberry segar dan madu.",
+    Gambar: Pancake,
   },
 ];
 
