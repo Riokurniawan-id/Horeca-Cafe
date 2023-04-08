@@ -1,5 +1,5 @@
 <h1>See Result</h1>
-https://horeca.i-putu-rioputu.repl.co/
+https://react-js-riokurniawan-id.vercel.app/
 
 # Getting Started with Create React App
 
