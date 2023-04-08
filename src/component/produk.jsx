@@ -40,4 +40,13 @@ function Produklist() {
   return Produk;
 }
 
-export default Produklist;
+const daftarProduk = () => {
+  return (
+    <section className="produk">
+      <h1>| Beberapa Produk Kami |</h1>
+      <div className="container-produk">{Produklist()}</div>
+    </section>
+  );
+};
+
+export default daftarProduk;
