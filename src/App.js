@@ -12,13 +12,7 @@ const App = () => {
       <Hiro />
       <About />
       <Mitra />
-      <section className="produk">
-        <h1>| Beberapa Produk Kami |</h1>
-        <div className="container-produk">
-          <Produk />
-        </div>
-      </section>
-
+      <Produk />
       <Footer />
       <Copyright />
     </div>

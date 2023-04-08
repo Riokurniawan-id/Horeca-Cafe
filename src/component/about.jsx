@@ -1,8 +1,10 @@
+import Profile from "../asset/img/img-owner-abaout.png";
+
 const About = () => {
   return (
     <section className="about" id="about">
       <div className="container-about">
-        <img src="asset/img/img-owner-abaout.png" alt="Owner" />
+        <img src={Profile} alt="Owner" />
         <div className="container-text-about">
           <h2>@ini_gk_tau_siapa</h2>
           <h1>
